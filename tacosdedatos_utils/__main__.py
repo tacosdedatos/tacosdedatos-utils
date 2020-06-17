@@ -9,6 +9,7 @@ from rich.console import Console
 
 from tacosdedatos_utils import __version__
 from tacosdedatos_utils.example import hello
+from tacosdedatos_utils.file_management import arbol
 
 
 class Color(str, Enum):
