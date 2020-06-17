@@ -12,7 +12,7 @@ readme = "README.md"
 authors = [
   "tacosdedatos <chekos@tacosdedatos.com>"
 ]
-license = "GNU GPL v3.0"
+license = "MIT"
 repository = "https://github.com/tacosdedatos/tacosdedatos-utils"
 homepage = "https://github.com/tacosdedatos/tacosdedatos-utils"
 
