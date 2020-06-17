@@ -66,3 +66,28 @@ def main(
 
     greeting: str = hello(name)
     console.print(f"[bold {color}]{greeting}[/]")
+
+
+@app.command("crear")
+def crear(
+    nombre: str = typer.Option(
+        ..., help="Nombre del proyecto que quieres crear"
+    ),
+    tipo: str = typer.Option(..., help="Tipo de proyecto: `analisis`"),
+    dir: str = typer.Option(
+        ..., help="Carpeta donde quieres crear tu proyecto"
+    ),
+):
+    """Crea el esqueleto de un proyecto. Como cookiecutter pero más básico.
+
+    Parameters
+    ----------
+    nombre : str, optional
+        Nombre del proyecto que quieres crear
+    tipo : str, optional
+        Tipo de proyecto: `analisis`
+    dir : str, optional
+        Carpeta donde quieres crear tu proyecto
+    """
+    typer.echo(f"Creando tu proyecto {nombre} en {dir}")
+    crear_proyecto(nombre, tipo, dir)
