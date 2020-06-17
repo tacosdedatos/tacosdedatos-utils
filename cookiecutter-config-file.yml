@@ -1,0 +1,10 @@
+# THis file contains values from Cookiecutter
+
+default_context:
+  project_name: "tacosdedatos-utils"
+  project_description: "Una coleccion de herramientas para facilitar el analisis y visualizacion de datos por @tacosdedatos."
+  organization: "tacosdedatos"
+  license: "GNU GPL v3.0"
+  version: "0.1.0"
+  github_name: "tacosdedatos"
+  email: "chekos@tacosdedatos.com"
