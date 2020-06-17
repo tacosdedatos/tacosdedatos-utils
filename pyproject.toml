@@ -12,7 +12,7 @@ readme = "README.md"
 authors = [
   "tacosdedatos <chekos@tacosdedatos.com>"
 ]
-license = "MIT"
+license = "Proprietary"
 repository = "https://github.com/tacosdedatos/tacosdedatos-utils"
 homepage = "https://github.com/tacosdedatos/tacosdedatos-utils"
 
