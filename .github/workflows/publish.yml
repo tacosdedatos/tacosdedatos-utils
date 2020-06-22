@@ -2,7 +2,7 @@ name: Publish package to PyPI
 
 on: 
   release:
-    types: [created, published]
+    types: [published]
 
 jobs:
   build:
@@ -49,5 +49,7 @@ jobs:
 
     - name: Publish to PyPI
       run: |
-        make download-poetry && 
+        make download-poetry 
+        source "$HOME/.poetry/env"
+        poetry config virtualenvs.in-project true
         poetry publish --build --username ${{ secrets.PYPI_USERNAME }} --password ${{ secrets.PYPI_PASSWORD }}
