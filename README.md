@@ -3,6 +3,7 @@
 <div align="center">
 
 [![PyPI version](https://badge.fury.io/py/tacosdedatos-utils.svg)](https://badge.fury.io/py/tacosdedatos-utils)
+[![Documentation Status](https://readthedocs.org/projects/tacosdedatos-utils/badge/?version=latest)](https://tacosdedatos-utils.readthedocs.io/es/latest/?badge=latest)
 [![Build status](https://github.com/tacosdedatos/tacosdedatos-utils/workflows/build/badge.svg?branch=master&event=push)](https://github.com/tacosdedatos/tacosdedatos-utils/actions?query=workflow%3Abuild)
 [![Python Version](https://img.shields.io/pypi/pyversions/tacosdedatos-utils.svg)](https://pypi.org/project/tacosdedatos-utils/)
 [![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](https://github.com/tacosdedatos/tacosdedatos-utils/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Aapp%2Fdependabot)
