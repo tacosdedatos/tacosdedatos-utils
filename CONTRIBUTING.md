@@ -1,51 +1,128 @@
-# How to contribute
+# Cómo contribuir
 
-## Dependencies
+¡Las contribuciones son bienvenidas y muy agradecidas!
+Todo ayuda y siempre vas a recibir 
 
-We use `poetry` to manage the [dependencies](https://github.com/python-poetry/poetry).
-If you dont have `poetry` installed, you should run the command below.
+¡Las contribuciones son bienvenidas y son muy apreciadas! Cada
+ayuda un poco, y siempre se dará crédito.
 
-```bash
-make download-poetry
-```
+Puedes contribuir de muchas maneras:
 
-To install dependencies and prepare [`pre-commit`](https://pre-commit.com/) hooks you would need to run `install` command:
+## Tipos de contribuciones
 
-```bash
-make install
-```
+### Reportar _bugs_ o errores
 
-To activate your `virtualenv` run `poetry shell`.
+Reportalos en <https://github.com/tacosdedatos/tacosdedatos-utils/issues>.
 
-## Codestyle
+Si estas reportando un _bug_, porfa íncluye:
 
-After you run `make install` you can execute the automatic code formatting.
+-   El nombre y versión de tu sistema operativo.
+-   Cualquier detalle sobre su configuración local que pueda ser útil en
+    solución de problemas.
+-   Pasos detallados para reproducir el error.
 
-```bash
-make codestyle
-```
+### Corregir _bugs_ o errores
 
-### Checks
+Puedes revistar los _issues_ en GitHub ([tacosdedatos/tacosdedatos-utils](https://github.com/tacosdedatos/tacosdedatos-utils/issues)).
+Cualquiera con la etiqute _"bug"_ y _"ayuda pls"_ esta abierto a quien quiera implementar la solución.
 
-Many checks are configured for this project. Command `make check-style` will run black diffs, darglint docstring style and mypy.
-The `make check-safety` command will look at the security of your code.
+### Implementar _Features_ o funciones 
 
-You can also use `STRICT=1` flag to make the check be strict.
+Puedes revistar los _issues_ en GitHub ([tacosdedatos/tacosdedatos-utils](https://github.com/tacosdedatos/tacosdedatos-utils/issues)).
+Cualquiera con la etiqute _"mejora"_ y _"ayuda pls"_ esta abierto a quien quiera implementar la solución.
 
-### Before submitting
 
-Before submitting your code please do the following steps:
+### Escribir documenteishon
 
-1. Add any changes you want
-1. Add tests for the new changes
-1. Edit documentation if you have changed something significant
-1. Run `make codestyle` to format your changes.
-1. Run `STRICT=1 make check-style` to ensure that types and docs are correct
-1. Run `STRICT=1 make check-safety` to ensure that security of your code is correct
+`tacosdedatos-utils` siempre puede utilizar más documentación. Ya sea en 
+los _docs_ oficiales, en docstrings, o en la web con publicaciónes en blogs, artículos y mucho más.
 
-## Other help
+### Enviar comentarios
 
-You can contribute by spreading a word about this library.
-It would also be a huge contribution to write
-a short article on how you are using this project.
-You can also share your best practices with us.
+La mejor manera de proveer retroalimentación es crear un _issue_ en 
+<https://github.com/tacosdedatos/tacosdedatos-utils/issues>.
+
+Si estás proponiendo una mejora:
+
+-   Explica en detallo como va a funcionar.
+-   Mantén el enfoque/alcance lo más estrecho posible para que sea más fácil
+    implementar. 
+-   Recuerde que este es un proyecto impulsado por voluntarixs, y que
+    las contribuciones son bienvenidas :)
+
+¡Comencemos!
+------------
+
+¿Listx para contribuir? Aquí esta como configurar [tacosdedatos-utils](#tacosdedatos-utils) 
+para desarrollo local.
+
+1.  Crea un _fork_ del repositorio en GitHub [tacosdedatos-utils]{#tacosdedatos-utils}.
+
+2.  Clona tu _fork_ localmente:
+
+        $ git clone https://github.com/tu_cuenta_de_github/tacosdedatos-utils.git
+
+3.  Instala tu copia local en un entorno virtual. Con `tacosdedatos-utils` utilizamos `poetry`
+    Asumiendo que lo tengas instalado, así es como configurars tu _fork_ para desarrollo local:
+
+        $ cd tacosdedatos-utils/
+        $ make install
+        $ poetry shell # para activar tu entorno virtual 
+    ```{admonition} Si no tienes instalado poetry
+    Ejecuta el comando `make download-poetry`
+    ```
+
+4.  Crea una _branch_ para el desarrollo local:
+
+        $ git checkout -b nombre-de-tu-mejora-o-correccion
+
+    Ahora puedes hacer cambios locales.
+
+5.  Cuando termines de hacer tus cambios, asegurate que tus cambios pasen
+    los _tests_, el estilo de código y las medidas de seguridad que utilizamos en `tacosdedatos-utils`
+    esto es fácil de hacer con los siguientes comando:
+
+        $ make codestyle
+        $ make tests
+        $ make check-safety
+
+
+6.  Haz _commit_ tus cambios y publicalos en tu _branch_ de GitHub:
+
+        $ git add .
+        $ git commit -m "Descripción detallada de tu mejora o arreglo de bug"
+        $ git push origin nombre-de-tu-mejora-o-correccion
+
+7.  Envía una _pull request_ a través de GitHub.
+
+
+## Directríces de las _Pull Request_
+
+Antes de enviar una _pull request_, verifica que cumpla lo siguiente:
+
+1.  La _pull request_ debe incluir tests.
+2.  Si tu _pull request_ agrega funcionalidad, la documentación debe ser actualizada.
+    Agrega tu nueva funcionalidad en una función con una docstring, y agrega tu mejora
+    en la lista en el `README.md`.
+3.  La _pull request_ debería funcionar en Python 3.6+
+
+
+## Tips
+
+Para ejecutar los _tests_
+
+    $ make tests
+
+
+## Publicación
+
+Un recordatorio para quienes mantienen el paquete. Asegurate que todos tus cambios esten
+_cometidos_ (incluyendo una entrada a `sobre-tacosdedatos-utils/historia.md`).
+
+Luego ejecuta:
+
+    $ poetry version patch # opciones: major / minor / patch
+    $ git tag -a <LA-NUEVA-VERSION-DEL-PAQUETE> -m "Versión <LA-NUEVA-VERSION-DEL-PAQUETE>"
+    $ git push && git push --tags
+
+El paquete será publicado a PyPI a través de GitHub Actions
