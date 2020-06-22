@@ -45,6 +45,8 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
     "sphinx.ext.viewcode",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.autosummary",
     "sphinxcontrib.bibtex",
     "sphinx_tabs.tabs",
 ]
@@ -87,3 +89,15 @@ html_theme_options = {
     "repository_url": "https://github.com/tacosdedatos/tacosdedatos-utils",
     "expand_sections": ["ejemplos/index"],
 }
+
+
+# from altair docs 
+autodoc_default_flags = ["members", "inherited-members"]
+
+autodoc_member_order = "groupwise"
+
+# generate autosummary even if no references
+autosummary_generate = True
+
+# Add any paths that contain templates here, relative to this directory.
+templates_path = ["_templates"]

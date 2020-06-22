@@ -7,6 +7,7 @@ caption: Usando tacosdedatos-utils
 ---
 uso/intro.md
 uso/faq.md
+uso/api.md
 ```
 
 ```{toctree}
