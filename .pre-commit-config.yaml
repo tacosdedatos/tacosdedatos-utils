@@ -17,6 +17,8 @@ repos:
         entry: poetry run isort -y --settings-path pyproject.toml
         types: [python]
         language: system
+        exclude: "docs/conf.py"
+
 
   - repo: local
     hooks:
@@ -33,3 +35,4 @@ repos:
         entry: poetry run black --config pyproject.toml
         types: [python]
         language: system
+        exclude: "docs/conf.py"

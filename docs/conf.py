@@ -26,10 +26,9 @@ author = "Sergio Sanchez"
 import os
 import sys
 
-import tacosdedatos_utils
-
 sys.path.insert(0, os.path.abspath(".."))
 
+import tacosdedatos_utils
 
 version = tacosdedatos_utils.__version__
 release = tacosdedatos_utils.__version__
