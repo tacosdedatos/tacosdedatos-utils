@@ -75,7 +75,7 @@ que también funciona desde tu línea de comandos.
 ![GIF mostrando como usar la linea de comandos con tacosdedatos-utils](https://github.com/chekos/pics_for_github/blob/master/2020-06-17%2014.06.39.gif?raw=true)
 
 
-## 📃 Citation
+## 📃 Citeishon
 
 ```
 @misc{tacosdedatos-utils,
@@ -88,6 +88,6 @@ que también funciona desde tu línea de comandos.
 }
 ```
 
-## Credits
+## Créditos
 
-This project was generated with [`python-package-template`](https://github.com/TezRomacH/python-package-template).
+Este proyecto fue generado con [`python-package-template`](https://github.com/TezRomacH/python-package-template).
