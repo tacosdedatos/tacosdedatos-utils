@@ -54,7 +54,7 @@ pydocstyle = "^5.0.2"
 # https://github.com/psf/black
 line-length = 80
 target-version = ["py37"]
-exclude = "^docs/conf.py"
+exclude = "^docs/"
 
 [tool.isort]
 # https://github.com/timothycrosley/isort/

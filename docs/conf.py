@@ -91,7 +91,7 @@ html_theme_options = {
 }
 
 
-# from altair docs 
+# from altair docs
 autodoc_default_flags = ["members", "inherited-members"]
 
 autodoc_member_order = "groupwise"
