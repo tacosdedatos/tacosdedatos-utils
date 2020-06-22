@@ -1,5 +1,10 @@
 # Bienvenidx a la documentación de `tacosdedatos-utils`
 
+
+
+```{include} ../README.md
+```
+
 ```{toctree}
 ---
 maxdepth: 2
@@ -28,6 +33,4 @@ sobre-tacosdedatos-utils/contribuir.md
 sobre-tacosdedatos-utils/historia.md
 ```
 
-
-```{include} ../README.md
-```
+{ref}`genindex`

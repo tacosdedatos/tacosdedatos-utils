@@ -17,8 +17,8 @@
 Una coleccion de herramientas para facilitar el analisis y visualizacion de datos por @tacosdedatos.
 </div>
 
-Que trae
---------
+## Que trae
+
 * la función `arbol` para mostrar los contenidos de la carpeta que le pases.
 ```python
 from tacosdedatos_utils.file_management import arbol
