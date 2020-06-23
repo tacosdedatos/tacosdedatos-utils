@@ -94,6 +94,7 @@ html_theme_options = {
     "launch_buttons": {
       "binderhub_url": "https://mybinder.org/v2/gh/tacosdedatos/tacosdedatos-utils/v1.0.0",
       "thebelab": True
+    }
 }
 
 
