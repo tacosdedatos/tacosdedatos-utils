@@ -1,7 +1,3 @@
-# Bienvenidx a la documentación de `tacosdedatos-utils`
-
-
-
 ```{include} ../README.md
 ```
 
@@ -32,5 +28,5 @@ sobre-tacosdedatos-utils/autores.md
 sobre-tacosdedatos-utils/contribuir.md
 sobre-tacosdedatos-utils/historia.md
 ```
-
-{ref}`genindex`
+Índice de la API
+* {ref}`genindex`
