@@ -21,7 +21,7 @@ Una coleccion de herramientas para facilitar el analisis y visualizacion de dato
 
 * la función `arbol` para mostrar los contenidos de la carpeta que le pases.
 ```python
-from tacosdedatos_utils.file_management import arbol
+from tacosdedatos_utils.manejo_de_archivos import arbol
 
 arbol("./notebooks")
 >>>> + notebooks
@@ -44,8 +44,8 @@ arbol("./notebooks")
 
 * la función `crear_proyecto`
 ```python
-from tacosdedatos_utils.project_management import crear_proyecto
-from tacosdedatos_utils.file_management import arbol
+from tacosdedatos_utils.manejo_de_proyectos import crear_proyecto
+from tacosdedatos_utils.manejo_de_archivos import arbol
 
 crear_proyecto(nombre = "proyecto-de-analisis-de-datos")
 
