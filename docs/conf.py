@@ -88,6 +88,12 @@ html_theme_options = {
     "github_url": "https://github.com/tacosdedatos/tacosdedatos-utils",
     "repository_url": "https://github.com/tacosdedatos/tacosdedatos-utils",
     "expand_sections": ["ejemplos/index"],
+    "path_to_docs": "docs",
+    "use_issues_button": True,
+    "use_edit_page_button": True,
+    "launch_buttons": {
+      "binderhub_url": "https://mybinder.org/v2/gh/tacosdedatos/tacosdedatos-utils/v1.0.0"
+      "thebelab": True
 }
 
 
