@@ -1,6 +1,7 @@
 ```{include} ../README.md
 ```
 
+## Tabla de contenido
 ```{toctree}
 ---
 maxdepth: 2
