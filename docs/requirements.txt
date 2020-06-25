@@ -1,5 +1,6 @@
-myst-parser
+myst-nb
 sphinx-tabs
 sphinxcontrib-bibtex
 sphinx-book-theme
 importlib_metadata
+tacosdedatos-utils

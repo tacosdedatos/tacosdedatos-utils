@@ -92,6 +92,4 @@ que también funciona desde tu línea de comandos.
 }
 ```
 
-## Créditos
-
-Este proyecto fue generado con [`python-package-template`](https://github.com/TezRomacH/python-package-template).
+> Este proyecto fue generado con [`python-package-template`](https://github.com/TezRomacH/python-package-template).

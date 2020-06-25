@@ -18,6 +18,7 @@ maxdepth: 2
 caption: Ejemplos
 ---
 ejemplos/index.md
+ejemplos/usando-arbol.ipynb
 ```
 
 ```{toctree}
