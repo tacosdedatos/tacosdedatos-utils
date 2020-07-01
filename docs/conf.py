@@ -41,6 +41,7 @@ release = tacosdedatos_utils.__version__
 # ones.
 extensions = [
     "myst_nb",
+    "sphinx_thebelab",
     "sphinx.ext.autosectionlabel",
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
