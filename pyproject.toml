@@ -17,7 +17,7 @@ repository = "https://github.com/tacosdedatos/tacosdedatos-utils"
 homepage = "https://github.com/tacosdedatos/tacosdedatos-utils"
 
 # Keywords description https://python-poetry.org/docs/pyproject/#keywords
-keywords = []  # Update me
+keywords = ["utils", "tacosdedatos"]  # Update me
 
 # Pypi classifiers: https://pypi.org/classifiers/
 classifiers = [  # Update me
@@ -36,7 +36,7 @@ python = "^3.7"
 importlib_metadata = {version = "^1.6.0", python = "<3.8"}
 typer = {extras = ["all"], version = "^0.2.1"}
 rich = "^2.2.2"
-pre-commit = "^2.5.1"
+# pre-commit = "^2.5.1"
 
 [tool.poetry.dev-dependencies]
 darglint = "^1.4.1"
