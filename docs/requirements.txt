@@ -3,6 +3,6 @@ sphinx-tabs==1.1.13
 sphinxcontrib-bibtex==1.0.0
 sphinx-book-theme==0.0.27
 importlib_metadata==1.6.1
-tacosdedatos-utils==1.0.0
+tacosdedatos-utils==1.1.0
 pandas==1.0.5
 ipython==7.16.1

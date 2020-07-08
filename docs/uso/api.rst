@@ -19,3 +19,4 @@ Módulos
 
    manejo_de_archivos
    manejo_de_proyectos
+   manejo_de_datos
