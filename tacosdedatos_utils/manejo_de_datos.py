@@ -13,6 +13,8 @@ def mostrar_dfs(
 
     Parameters
     ----------
+    dfs : Union[pd.DataFrame, pd.Series]
+        Los objetos (DataFrame o Series de pandas) que quieres mostrar.
     espacio : int, optional
         El espacio entre cada DataFrame en pixeles, por default 20 
     """
