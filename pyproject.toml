@@ -6,7 +6,7 @@ build-backend = "poetry.masonry.api"
 
 [tool.poetry]
 name = "tacosdedatos-utils"
-version = "1.0.0"
+version = "1.1.0"
 description = "Una coleccion de herramientas para facilitar el analisis y visualizacion de datos por @tacosdedatos."
 readme = "README.md"
 authors = [
