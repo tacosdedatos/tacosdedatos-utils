@@ -1,9 +1,14 @@
 """Utilidades para el manejo de datos."""
 
+from typing import Union
+
+import pandas as pd
 from IPython.display import display_html
 
 
-def mostrar_dfs(*dfs, espacio: int = 20) -> None:
+def mostrar_dfs(
+    *dfs: Union[pd.DataFrame, pd.Series], espacio: int = 20
+) -> None:
     """Muestra más de un DataFrame o Serie de pandas en una celda de jupyter notebooks.
 
     Parameters
