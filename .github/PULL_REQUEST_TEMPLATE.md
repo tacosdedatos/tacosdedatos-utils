@@ -21,8 +21,8 @@
 
 <!-- Marque con una `x` todas las casillas de verificación que correspondan (así `[x]`) -->
 
-- [ ] Ya leí el documento [`CODE_OF_CONDUCT.md`](https://github.com/tacosdedatos/tacosdedatos-utils/blob/master/CODE_OF_CONDUCT.md) document.
-- [ ] Ya leí la guía [`CONTRIBUTING.md`](https://github.com/tacosdedatos/tacosdedatos-utils/blob/master/CONTRIBUTING.md) guide.
+- [ ] Ya leí el documento [`CODE_OF_CONDUCT.md`](https://github.com/tacosdedatos/tacosdedatos-utils/blob/master/CODE_OF_CONDUCT.md).
+- [ ] Ya leí la guía [`CONTRIBUTING.md`](https://github.com/tacosdedatos/tacosdedatos-utils/blob/master/CONTRIBUTING.md).
 - [ ] Actualizé el código usando `make codestyle`.
 - [ ] He escrito pruebas para todos los nuevos métodos y clases que creé.
 - [ ] He escrito la docstring en formato de NumPy para todos los métodos y clases que utilicé.
