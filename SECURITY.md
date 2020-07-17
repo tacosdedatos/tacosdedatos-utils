@@ -1,27 +1,27 @@
-# Security
+# Seguridad
 
-## 🔐 Reporting Security Issues
+## 🔐 Informar problemas de seguridad
 
-> Do not open issues that might have security implications!
-> It is critical that security related issues are reported privately so we have time to address them before they become public knowledge.
+> ¡No abra _issues_ que puedan tener implicaciones de seguridad!
+> Es fundamental que los problemas relacionados con la seguridad se informen de forma privada, por lo que tenemos tiempo para abordarlos antes de que se conviertan en conocimiento público.
 
-Vulnerabilities can be reported by emailing core members:
+Las vulnerabilidades se pueden informar enviando un correo electrónico a los miembros principales:
 
 - tacosdedatos [chekos@tacosdedatos.com](mailto:chekos@tacosdedatos.com)
 
-Please include the requested information listed below (as much as you can provide) to help us better understand the nature and scope of the possible issue:
+Incluya la información solicitada que se detalla a continuación (tanto como pueda proporcionar) para ayudarnos a comprender mejor la naturaleza y el alcance del posible problema:
 
-- Type of issue (e.g. buffer overflow, SQL injection, cross-site scripting, etc.)
-- Full paths of source file(s) related to the manifestation of the issue
-- The location of the affected source code (tag/branch/commit or direct URL)
-- Any special configuration required to reproduce the issue
-- Environment (e.g. Linux / Windows / macOS)
-- Step-by-step instructions to reproduce the issue
-- Proof-of-concept or exploit code (if possible)
-- Impact of the issue, including how an attacker might exploit the issue
+- Tipo de problema (por ejemplo, desbordamiento de búfer, inyección de SQL, secuencias de comandos entre sitios, etc.)
+- Rutas completas de los archivos de origen relacionados con la manifestación del problema.
+- La ubicación del código fuente afectado (etiqueta / rama / commit o URL directa)
+- Cualquier configuración especial requerida para reproducir el problema
+- Entorno (por ejemplo, Linux / Windows / macOS)
+- Instrucciones paso a paso para reproducir el problema.
+- Prueba de concepto o código de explotación (si es posible)
+- Impacto del problema, incluido cómo un atacante podría explotar el problema
 
-This information will help us triage your report more quickly.
+Esta información nos ayudará a clasificar su informe más rápidamente.3
 
-## Preferred Languages
+## Idiomas preferidos
 
-We prefer all communications to be in English.
+Preferimos que todas las comunicaciones sean en **español**.
