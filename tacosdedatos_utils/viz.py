@@ -57,6 +57,10 @@ def tema_altair():
                 "titleFontSize": 18,
                 "titlePadding": 10,
                 "titleFont": font,
+                "titleAngle": 0,
+                "titleX": -70,
+                "titleY": -18,
+                "titleAnchor": "start",
             },
             "axisRight": {
                 "domainColor": axisColor,
