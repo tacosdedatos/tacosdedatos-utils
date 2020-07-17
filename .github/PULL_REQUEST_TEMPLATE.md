@@ -1,28 +1,28 @@
-## Description
+## Descripción
 
-<!-- Add a more detailed description of the changes if needed. -->
+<!-- Agregue una descripción más detallada de los cambios si es necesario. -->
 
-## Related Issue
+## Issues relacionados
 
-<!-- If your PR refers to a related issue, link it here. -->
+<!-- Si tu PR es en referencia a un issue, agregalo aquí. -->
 
-## Type of Change
+## Tipo de cambio
 
-<!-- Mark with an `x` all the checkboxes that apply (like `[x]`) -->
+<!-- Marque con una `x` todas las casillas de verificación que correspondan (así `[x]`) -->
 
-- [ ] 📚 Examples / docs / tutorials / dependencies update
-- [ ] 🔧 Bug fix (non-breaking change which fixes an issue)
-- [ ] 🥂 Improvement (non-breaking change which improves an existing feature)
-- [ ] 🚀 New feature (non-breaking change which adds functionality)
-- [ ] 💥 Breaking change (fix or feature that would cause existing functionality to change)
-- [ ] 🔐 Security fix
+- [ ] 📚 Ejemplos / docs / tutoriales / actualizar dependencias
+- [ ] 🔧 Corrige un bug (un cambio que corrige un problema sin cambios mayores al proyecto)
+- [ ] 🥂 Mejora (mejora una característica existente sin cambios mayores al proyecto)
+- [ ] 🚀 Nueva función (agrega funcionalidad sin cambios mayores al proyecto)
+- [ ] 💥 Cambio mayor (arregla o mejora algo que cambiaría la funcionalidad existente)
+- [ ] 🔐 Mejora de seguridad
 
-## Checklist
+## Lista
 
-<!-- Mark with an `x` all the checkboxes that apply (like `[x]`) -->
+<!-- Marque con una `x` todas las casillas de verificación que correspondan (así `[x]`) -->
 
-- [ ] I've read the [`CODE_OF_CONDUCT.md`](https://github.com/tacosdedatos/tacosdedatos-utils/blob/master/CODE_OF_CONDUCT.md) document.
-- [ ] I've read the [`CONTRIBUTING.md`](https://github.com/tacosdedatos/tacosdedatos-utils/blob/master/CONTRIBUTING.md) guide.
-- [ ] I've updated the code style using `make codestyle`.
-- [ ] I've written tests for all new methods and classes that I created.
-- [ ] I've written the docstring in Google format for all the methods and classes that I used.
+- [ ] Ya leí el documento [`CODE_OF_CONDUCT.md`](https://github.com/tacosdedatos/tacosdedatos-utils/blob/master/CODE_OF_CONDUCT.md).
+- [ ] Ya leí la guía [`CONTRIBUTING.md`](https://github.com/tacosdedatos/tacosdedatos-utils/blob/master/CONTRIBUTING.md).
+- [ ] Actualizé el código usando `make codestyle`.
+- [ ] He escrito pruebas para todos los nuevos métodos y clases que creé.
+- [ ] He escrito la docstring en formato de NumPy para todos los métodos y clases que utilicé.

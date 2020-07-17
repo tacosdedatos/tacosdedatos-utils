@@ -24,9 +24,9 @@ Una colección de herramientas para facilitar el análisis y visualización de d
 
 * la función `arbol` para mostrar los contenidos de la carpeta que le pases.
 ```python
-from tacosdedatos_utils.manejo_de_archivos import arbol
+import tacosdedatos_utils as tdd
 
-arbol("./notebooks")
+tdd.arbol("./notebooks")
 >>>> + notebooks
         + Cpp.ipynb
         + Data.ipynb
@@ -47,12 +47,11 @@ arbol("./notebooks")
 
 * la función `crear_proyecto`
 ```python
-from tacosdedatos_utils.manejo_de_proyectos import crear_proyecto
-from tacosdedatos_utils.manejo_de_archivos import arbol
+import tacosdedatos_utils as tdd 
 
-crear_proyecto(nombre = "proyecto-de-analisis-de-datos")
+tdd.crear_proyecto(nombre = "proyecto-de-analisis-de-datos")
 
-arbol("proyecto-de-analisis-de-datos/")
+tdd.arbol("proyecto-de-analisis-de-datos/")
 >>>> + proyecto-de-analisis-de-datos
         + AUTORES.md
         + README.md

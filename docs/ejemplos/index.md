@@ -4,9 +4,9 @@
 
 * la función `arbol` para mostrar los contenidos de la carpeta que le pases.
 ```python
-from tacosdedatos_utils.file_management import arbol
+import tacosdedatos_utils.file_management as tdd
 
-arbol("./notebooks")
+tdd.arbol("./notebooks")
 >>>> + notebooks
         + Cpp.ipynb
         + Data.ipynb
@@ -27,12 +27,11 @@ arbol("./notebooks")
 
 * la función `crear_proyecto`
 ```python
-from tacosdedatos_utils.project_management import crear_proyecto
-from tacosdedatos_utils.file_management import arbol
+import tacosdedatos_utils as tdd
 
-crear_proyecto(nombre = "proyecto-de-analisis-de-datos")
+tdd.crear_proyecto(nombre = "proyecto-de-analisis-de-datos")
 
-arbol("proyecto-de-analisis-de-datos/")
+tdd.arbol("proyecto-de-analisis-de-datos/")
 >>>> + proyecto-de-analisis-de-datos
         + AUTORES.md
         + README.md

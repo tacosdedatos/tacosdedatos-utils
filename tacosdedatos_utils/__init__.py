@@ -11,3 +11,7 @@ try:
     __version__ = version(__name__)
 except PackageNotFoundError:  # pragma: no cover
     __version__ = "unknown"
+
+from .manejo_de_archivos import *
+from .manejo_de_datos import *
+from .manejo_de_proyectos import *
