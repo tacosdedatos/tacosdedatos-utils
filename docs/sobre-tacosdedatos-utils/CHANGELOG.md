@@ -1,3 +1,6 @@
+## 1.2.0 (2020-07-18)
+* Agrega el submódulo `viz` con la función `tema_altair` la cual es un _theme_ de Altair. Para más información sobre temas en Altair visita [la documentación](https://altair-viz.github.io/user_guide/configuration.html?highlight=theme#altair-themes) o este artículo para crear tu propio _theme_: [Consistently Beautiful Visualizations with Altair Themes](https://towardsdatascience.com/consistently-beautiful-visualizations-with-altair-themes-c7f9f889602) por su servilleta Sergio Sánchez 🤓
+
 ## 1.1.0 (2020-07-08)
 * Agrega el submódulo `manejo_de_datos` con la función `mostrar_dfs` para mostrar más de un DataFrame o Serie de pandas como _output_ de una celda de jupyter notebook.
 * También cambia la estructura del proyecto, ahora las funciones son incluides al nivel mas alto de `tacosdedatos_utils`. Ya no es necesario importar `tacosdedatos_utils.manejo_de_proyectos` para usar `crear_proyecto()`, por ejemplo. Ahora solo es
