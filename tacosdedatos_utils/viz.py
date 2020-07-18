@@ -1,9 +1,9 @@
 """Utilidades para la visualización de datos"""
 
-from typing import Dict
+from typing import Dict, Union
 
 
-def tema_altair() -> Dict:
+def tema_altair() -> Dict[str, Union[str, int, float]]:
     """Un tema de Altair. Colores, dimensiones, tamaño de ticks, de etiquetas, de leyenda.
 
     Returns
