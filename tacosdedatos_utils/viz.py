@@ -1,12 +1,14 @@
 """Utilidades para la visualización de datos"""
 
+from typing import Dict
 
-def tema_altair() -> dict:
+
+def tema_altair() -> Dict:
     """Un tema de Altair. Colores, dimensiones, tamaño de ticks, de etiquetas, de leyenda.
 
     Returns
     -------
-    tema : dict
+    tema : Dict
         Un diccionario con las especificaciones del tema.
     """
     markColor = "#282828"
