@@ -3,7 +3,9 @@
 from typing import Dict, Union
 
 
-def tema_altair() -> Dict[str, Union[str, int, float, Dict]]:
+def tema_altair() -> Dict[
+    str, Union[str, int, float, Dict[str, Union[str, int, float]]]
+]:
     """Un tema de Altair. Colores, dimensiones, tamaño de ticks, de etiquetas, de leyenda.
 
     Returns
@@ -11,8 +13,8 @@ def tema_altair() -> Dict[str, Union[str, int, float, Dict]]:
     tema : Dict
         Un diccionario con las especificaciones del tema.
     """
-    markColor = "#282828"
     axisColor = "#282828"
+    markColor = "#282828"
     backgroundColor = "#FFFAFA"
     font = "Helvetica"
     labelfont = "Helvetica"
