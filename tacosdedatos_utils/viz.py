@@ -3,7 +3,7 @@
 from typing import Dict, Union
 
 
-def tema_altair() -> Dict[str, Union[str, int, float]]:
+def tema_altair() -> Dict[str, Union[str, int, float, Dict]]:
     """Un tema de Altair. Colores, dimensiones, tamaño de ticks, de etiquetas, de leyenda.
 
     Returns
