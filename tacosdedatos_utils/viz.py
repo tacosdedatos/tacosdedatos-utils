@@ -2,6 +2,13 @@
 
 
 def tema_altair():
+    """Un tema de Altair. Colores, dimensiones, tamaño de ticks, de etiquetas, de leyenda.
+
+    Returns
+    -------
+    tema
+        Un diccionario con las especificaciones del tema.
+    """
     markColor = "#282828"
     axisColor = "#282828"
     backgroundColor = "#FFFAFA"
