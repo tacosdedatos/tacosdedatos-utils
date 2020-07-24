@@ -38,6 +38,7 @@ typer = {extras = ["all"], version = "^0.2.1"}
 rich = "^2.2.2"
 pandas = "^1.0.0"
 ipython = "^7.16.1"
+defusedxml = "^0.6.0"
 
 [tool.poetry.dev-dependencies]
 darglint = "^1.4.1"

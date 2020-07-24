@@ -1,7 +1,8 @@
 """Utilidades para la visualización de datos"""
-import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import List, Union
+
+import defusedxml.ElementTree as ET
 
 
 def tema_altair():
