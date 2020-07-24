@@ -1,4 +1,7 @@
 """Utilidades para la visualización de datos"""
+import xml.etree.ElementTree as ET
+from pathlib import Path
+from typing import List, Union
 
 
 def tema_altair():
@@ -205,3 +208,88 @@ def tema_altair():
             },
         },
     }
+
+
+def crear_paleta_tableau(
+    colores: List[str], tipo: str, nombre: str, agregar_a_tableau: bool = False
+) -> Union[str, None]:
+    r"""Tranforma una lista de colores (en formato hex) en una paleta en formato XML para copiar y pegar en Preferences.tps para su uso en tableau. Si el argumento `agregar_a_tableau` es True puedes agregarla directamente con esta función.
+
+    Parameters
+    ----------
+    colores : List[str]
+        Una lista de colores en formato hex.
+    tipo : str
+        Tipo de paleta de colores: "divergente", "regular", o "secuencial".
+    nombre : str
+        Nombre de tu paleta de colores. Por ejemplo, "likert - rojo a azul"
+    agregar_a_tableau : bool, optional
+        Si es True, esta función busca tu `Preferences.tps` en `~/Documents/My Tableau Repository/` y agrega la paleta para que no tengas que hacerlo manualmente. Por default es False.
+
+    Returns
+    -------
+    Union[str, None]
+        La paleta lista en el formato correcto para `Preferences.tps`. Si `agregar_a_tableau` es True, no se regresa la paleta. Se agrega directo a Preferences.tps
+
+    
+    Examples
+    --------
+    `crear_paleta_tableau()` te da una cadena de caracteres con caracteres especiales (como el \ n para saltar líneas o \ t para tabs). Asegurate de hacer `print()` el resultado de la función para copiar y pegar en `Preferences.tps`.
+    Por ejemplo:
+    >>>> colores_tdd = [
+                    "#dc0d7a",
+                    "#02a3cd",
+                    "#e4a100",
+                    "#dc0d12",
+                    "#0DDC6F",
+                    "#074a7e",
+                    "#e46800",
+                    "#aa3594",
+                    "#a20c4b",
+                ]
+    >>>> paleta_nueva = tdd.crear_paleta_tableau(colores = colores_tdd, tipo = "regular", nombre = "tacosdedatos - colores principales")
+    >>>> print(paleta_nueva)
+    >>>> <color-palette name="tacosdedatos - colores principales" type="regular">
+            <color>#dc0d7a</color>
+            <color>#02a3cd</color>
+            <color>#e4a100</color>
+            <color>#dc0d12</color>
+            <color>#0DDC6F</color>
+            <color>#074a7e</color>
+            <color>#e46800</color>
+            <color>#aa3594</color>
+            <color>#a20c4b</color>
+        </color-palette>
+    """
+    tipos_de_paletas = ["regular", "secuencial", "divergente"]
+    if tipo not in tipos_de_paletas:
+        raise TypeError(
+            f"Las paletas pueden ser solo `regular`, `secuencial`, or `divergente`, tu escogiste: {tipo}"
+        )
+
+    if tipo == "secuencial":
+        tipo = "ordered-sequential"
+    if tipo == "divergente":
+        tipo = "ordered-divergent"
+
+    lista_de_colores = [f"\t<color>{color}</color>\n" for color in colores]
+    colores_de_la_paleta = "".join(lista_de_colores)
+
+    paleta = f'<color-palette name="{nombre}" type="{tipo}">\n{colores_de_la_paleta}</color-palette>\n'
+
+    if agregar_a_tableau:
+        repo_tableau = Path.home() / "Documents/My Tableau Repository/"
+        if repo_tableau.exists():
+            arbol = ET.parse(repo_tableau / "Preferences.tps")
+            raiz = arbol.getroot()
+            preferences = raiz[0]
+            nueva_paleta = ET.fromstring(paleta)
+            preferences.append(nueva_paleta)
+            arbol.write(repo_tableau / "Preferences.tps")
+        else:
+            raise OSError(
+                f"No encontramos la carpeta {str(repo_tableau)} asegurate que exista y tengas acceso a ella."
+            )
+        return None
+    else:
+        return paleta
