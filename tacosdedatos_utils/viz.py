@@ -235,32 +235,24 @@ def crear_paleta_tableau(
     
     Examples
     --------
-    `crear_paleta_tableau()` te da una cadena de caracteres con caracteres especiales (como el \ n para saltar líneas o \ t para tabs). Asegurate de hacer `print()` el resultado de la función para copiar y pegar en `Preferences.tps`.
+    `crear_paleta_tableau()` te da una cadena de caracteres con caracteres especiales (como el \n para saltar líneas o \t para tabs). Asegurate de hacer `print()` el resultado de la función para copiar y pegar en `Preferences.tps`.
     Por ejemplo:
-    >>>> colores_tdd = [
-                    "#dc0d7a",
-                    "#02a3cd",
-                    "#e4a100",
-                    "#dc0d12",
-                    "#0DDC6F",
-                    "#074a7e",
-                    "#e46800",
-                    "#aa3594",
-                    "#a20c4b",
-                ]
-    >>>> paleta_nueva = tdd.crear_paleta_tableau(colores = colores_tdd, tipo = "regular", nombre = "tacosdedatos - colores principales")
-    >>>> print(paleta_nueva)
-    >>>> <color-palette name="tacosdedatos - colores principales" type="regular">
-            <color>#dc0d7a</color>
-            <color>#02a3cd</color>
-            <color>#e4a100</color>
-            <color>#dc0d12</color>
-            <color>#0DDC6F</color>
-            <color>#074a7e</color>
-            <color>#e46800</color>
-            <color>#aa3594</color>
-            <color>#a20c4b</color>
-        </color-palette>
+
+    >>> import tacosdedatos_utils as tdd 
+    >>> colores_tdd = ['#dc0d7a', '#02a3cd', '#e4a100', '#dc0d12', '#0DDC6F', '#074a7e', '#e46800', '#aa3594', '#a20c4b',] 
+    >>> paleta_nueva = tdd.crear_paleta_tableau(colores = colores_tdd, tipo = 'regular', nombre = 'tacosdedatos - colores principales')
+    >>> print(paleta_nueva)
+    <color-palette name="tacosdedatos - colores principales" type="regular">
+       <color>#dc0d7a</color>
+       <color>#02a3cd</color>
+       <color>#e4a100</color>
+       <color>#dc0d12</color>
+       <color>#0DDC6F</color>
+       <color>#074a7e</color>
+       <color>#e46800</color>
+       <color>#aa3594</color>
+       <color>#a20c4b</color>
+    </color-palette>
     """
     tipos_de_paletas = ["regular", "secuencial", "divergente"]
     if tipo not in tipos_de_paletas:
