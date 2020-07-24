@@ -1,3 +1,6 @@
+## 1.3.0 (2020-07-23)
+* Agrega función `.crear_paleta_tableau()` que tranforma una lista de colores en formato hex a XML para poder agregar al archivo `~/Documents/My Tableau Repository/Preferences.tps` para agregar tu paleta de colores personalizada a Tableau.
+
 ## 1.2.0 (2020-07-18)
 * Agrega el submódulo `viz` con la función `tema_altair` la cual es un _theme_ de Altair. Para más información sobre temas en Altair visita [la documentación](https://altair-viz.github.io/user_guide/configuration.html?highlight=theme#altair-themes) o este artículo para crear tu propio _theme_: [Consistently Beautiful Visualizations with Altair Themes](https://towardsdatascience.com/consistently-beautiful-visualizations-with-altair-themes-c7f9f889602) por su servilleta Sergio Sánchez 🤓
 
