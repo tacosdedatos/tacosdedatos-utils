@@ -57,7 +57,7 @@ tdd.arbol("proyecto-de-analisis-de-datos/")
 
 `crear_proyecto()` también funciona desde la línea de comandos
 ```shell
-tacosdeatos crear --nombre "proyecto-nuevo" --tipo "analisis" --dir "."
+tacosdedatos-utils crear --nombre "proyecto-nuevo" --tipo "analisis" --dir "."
 ```
 
 ![GIF mostrando como usar la linea de comandos con tacosdedatos-utils](https://github.com/chekos/pics_for_github/blob/master/2020-06-17%2014.06.39.gif?raw=true)
